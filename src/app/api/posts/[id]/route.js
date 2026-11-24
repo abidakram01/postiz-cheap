@@ -3,6 +3,7 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { DemoStore } from "@/lib/demo-store";
+import config from "@/lib/config";
 
 // DELETE: Delete or Cancel a post
 export async function DELETE(req, { params }) {
